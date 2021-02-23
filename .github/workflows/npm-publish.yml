@@ -10,15 +10,15 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout source
+    - name: Checkout source
       uses: actions/checkout@main
-    - name: install and build
-      run: 
+    - name: Install and Build
+      run: |
         npm install
         npm run build
-    - name: deploy
+    - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
-        token: ${{secrets.ACCESS_TOKEN}}
+        #token: ${{secrets.ACCESS_TOKEN}}
         branch: mypic-page
-        #folder: build
+        folder: build
