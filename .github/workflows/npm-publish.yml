@@ -21,4 +21,4 @@ jobs:
       with:
         token: ${{secrets.ACCESS_TOKEN}}
         branch: mypic-page
-        folder: /build
+        folder: build
