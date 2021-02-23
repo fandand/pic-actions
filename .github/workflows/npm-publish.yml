@@ -20,7 +20,6 @@ jobs:
         npm run build
     - name: deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
-            JamesIves/github-pages-deploy-action
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: mypic-page
