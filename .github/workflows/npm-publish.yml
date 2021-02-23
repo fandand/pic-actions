@@ -20,6 +20,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
         #token: ${{secrets.ACCESS_TOKEN}}
-        # github 规定，只有在gh-pages分支中的文件才会生成网页文件
         branch: gh-pages
         folder: build
