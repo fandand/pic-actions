@@ -20,7 +20,8 @@ jobs:
         npm run build
     - name: deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
-      env:
+            JamesIves/github-pages-deploy-action
+      with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: pic-pages
+        BRANCH: mypic-page
         FOLDER: build
